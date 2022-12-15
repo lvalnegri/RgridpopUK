@@ -1,20 +1,27 @@
-Package: Rgridpop
+Package: RgridpopUK
 Type: Package
-Date: 2022-05-31
-Title: Population at micro grid level (various sources)
+Date: 2022-12-15
+Title: Population of England and Wales at micro grid level
 Version: 0.1.0
 Authors@R: person("Luca", "Valnegri", email = "l.valnegri@datamaps.co.uk", role = c("aut", "cre"))
-Description: Population at micro grid level (various sources). 
+Description: Population of England and Wales at 30 meters micro grid level, with segments by Sex and Age classes.
 License: file LICENSE
+Language: en-GB
 Encoding: UTF-8
+URL: https://github.com/lvalnegri/RgridpopUK
+BugReports: https://github.com/lvalnegri/RgridpopUK/issues
 Depends: R (>= 4.1)
 Imports:
   data.table,
+  fst,
   leaflet,
-  Rfuns,
   sf
 Suggests:
+  knitr,
+  rmarkdown,
+  qs
 Remotes:
-  lvalnegri/Rfuns
 LazyData: true
-RoxygenNote: 7.2.0
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr

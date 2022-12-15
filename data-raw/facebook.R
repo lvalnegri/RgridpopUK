@@ -2,7 +2,6 @@
 # Grid Population - Facebook - 30 mt #
 ######################################
 # https://data.humdata.org/dataset/united-kingdom-high-resolution-population-density-maps-demographic-estimates
-# totals: , pop > 0: , valid "general": 19,077,546
 
 Rfuns::load_pkgs('data.table', 'qs', 'sf')
 
@@ -33,7 +32,6 @@ if(down_unz){
 }
 
 yb <- qs::qread(file.path(bnduk_path, 's00', 'MSOA21gb'))
-yb$MSOA <- as.character(yb$MSOA)
 
 fns <- list.files(in_path, 'csv$', full.names = TRUE)
 tns <- gsub('.*/(.*).csv$', '\\1', fns) 
