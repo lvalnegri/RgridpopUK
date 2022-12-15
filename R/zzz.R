@@ -47,3 +47,27 @@ centroids <- data.table(
     fColour = c('cadetblue', 'darkpurple', 'red')        # marker colour
 )
 
+#' credits
+#' 
+#' List of attributions in HTML format
+#'
+#' @export
+#' 
+credits <- '
+    <ul>
+        <li>
+            Facebook Connectivity Lab and Center for International Earth Science Information Network - CIESIN - Columbia University. 2016. \n
+            High Resolution Settlement Layer (HRSL). Source imagery for HRSL © 2016 DigitalGlobe. \n
+            <a href="https://data.humdata.org/dataset/united-kingdom-high-resolution-population-density-maps-demographic-estimates">Data accessed 15 Dec 2022</a>.
+        </li>
+        <li> Contains OS data © Crown copyright and database rights 2023. </li>
+        <li>
+            Source: Office for National Statistics licensed under the 
+            [Open Government Licence v.3.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
+        </li>
+        <li>
+            Contains Parliamentary information licensed under the 
+            <a href="https://www.parliament.uk/site-information/copyright/open-parliament-licence/">Open Parliament Licence v3.0</a>.
+        </li>
+    </ul>
+'

@@ -10,7 +10,7 @@ NULL
 #' The name of each Zone is completed with the name in brackets of the correspondent `LTLA`
 #'
 #' For more details, consult the [ONS Geoportal](https://geoportal.statistics.gov.uk/search?sort=-modified&tags=msoa) and 
-#' the [House of Commons Library MSOA Names](https://houseofcommonslibrary.github.io/msoanames/])
+#' the [House of Commons Library MSOA Names](https://houseofcommonslibrary.github.io/msoanames/)
 #' 
 'msoa.lst'
 
@@ -20,7 +20,7 @@ NULL
 #' 
 #' The CRS is WGS84, EPSG:4326, the lines have been simplified at 20%
 #'
-#' For more details, consult the [ONS Geoportal](https://geoportal.statistics.gov.uk/]
+#' For more details, consult the [ONS Geoportal](https://geoportal.statistics.gov.uk/)
 #'
 'MSOA'
 
@@ -30,7 +30,7 @@ NULL
 #'
 #' The CRS is BNG, EPSG:27700, the lines have been kept at their original shape.
 #'
-#' For more details, consult the [ONS Geoportal](https://geoportal.statistics.gov.uk/]
+#' For more details, consult the [ONS Geoportal](https://geoportal.statistics.gov.uk/)
 #'
 'MSOAgb'
 
@@ -38,4 +38,4 @@ NULL
 #'
 #' Initial leaflet map of England and Wales
 #'
-'MSOA'
+'mps'

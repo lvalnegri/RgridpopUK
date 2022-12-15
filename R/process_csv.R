@@ -12,14 +12,14 @@
 #' @export
 #'
 process_csv <- \(in_path, out_path = in_path){
+    bbox <- st_bbox(MSOA)
     fns <- list.files(in_path, 'csv$', full.names = TRUE)
     tns <- gsub('.*/(.*).csv$', '\\1', fns) 
     for(idx in 1:length(fns)){
         message('\n===============================================')
         message('\nSTARTING: ', toupper(tns[idx]))
         y <- fread(fns[idx], col.names = c('y_lat', 'x_lon', 'pop'))
-        y[, `:=`( id = 1:.N, x_lon = x_lon + 0.00025 )]
-        y <- y[!(x_lon < bbox.uk[1, 1] | x_lon > bbox.uk[1, 2] | y_lat < bbox.uk[2, 1] | y_lat > bbox.uk[2, 2]) & pop > 0]
+        y <- y[!(x_lon < bbox[1] | x_lon > bbox.uk[2] | y_lat < bbox.uk[3] | y_lat > bbox.uk[4]) & pop > 0][, id := 1:.N] |> setcolorder('x_lon')
         yt <- rbindlist(lapply(
             MSOAgb$MSOA,
             \(x){

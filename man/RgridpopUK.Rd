@@ -30,9 +30,8 @@ with their names aptly substituted as provided by the \href{https://houseofcommo
 A Shiny app is also included ready to run as soon as the data have been processed.
 \subsection{Attributions}{
 \itemize{
-\item Facebook Connectivity Lab and Center for International Earth Science Information Network - CIESIN - Columbia University. 2016. High Resolution Settlement Layer (HRSL). Source imagery for HRSL © 2016 DigitalGlobe. Accessed 14 Dec 2022."
-\item Contains OS data © Crown copyright and database rights \link{2022}
-\item Contains National Statistics data © Crown copyright and database rights \link{2022}
+\item Facebook Connectivity Lab and Center for International Earth Science Information Network - CIESIN - Columbia University. 2016. High Resolution Settlement Layer (HRSL). Source imagery for HRSL © 2016 DigitalGlobe. Accessed 15 Dec 2022."
+\item Contains OS data © Crown copyright and database rights 2023
 \item Source: Office for National Statistics licensed under the \href{http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/}{Open Government Licence v.3.0}
 \item Contains Parliamentary information licensed under the \href{https://www.parliament.uk/site-information/copyright/open-parliament-licence/}{Open Parliament Licence v3.0}
 }

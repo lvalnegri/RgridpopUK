@@ -6,22 +6,16 @@
 \title{MSOA}
 \format{
 An object of class \code{sf} (inherits from \code{data.frame}) with 7264 rows and 2 columns.
-
-An object of class \code{sf} (inherits from \code{data.frame}) with 7264 rows and 2 columns.
 }
 \usage{
-MSOA
-
 MSOA
 }
 \description{
 Geographic Digital Boundaries in \code{sf} format of Medium Super Output Areas (MSOA) in England and Wales as of last Census 2021 (last update: Dec 2021).
-
-Initial leaflet map of England and Wales
 }
 \details{
 The CRS is WGS84, EPSG:4326, the lines have been simplified at 20\%
 
-For more details, consult the \link{ONS Geoportal}(https://geoportal.statistics.gov.uk/]
+For more details, consult the \href{https://geoportal.statistics.gov.uk/}{ONS Geoportal}
 }
 \keyword{datasets}

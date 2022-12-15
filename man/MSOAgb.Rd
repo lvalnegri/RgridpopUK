@@ -16,6 +16,6 @@ Geographic Boundaries in \code{sf} format of Medium Super Output Areas (MSOA) in
 \details{
 The CRS is BNG, EPSG:27700, the lines have been kept at their original shape.
 
-For more details, consult the \link{ONS Geoportal}(https://geoportal.statistics.gov.uk/]
+For more details, consult the \href{https://geoportal.statistics.gov.uk/}{ONS Geoportal}
 }
 \keyword{datasets}

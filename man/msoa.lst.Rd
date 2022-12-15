@@ -16,6 +16,6 @@ The name of each Zone is completed with the name in brackets of the corresponden
 }
 \details{
 For more details, consult the \href{https://geoportal.statistics.gov.uk/search?sort=-modified&tags=msoa}{ONS Geoportal} and
-the \href{https://houseofcommonslibrary.github.io/msoanames/]}{House of Commons Library MSOA Names}
+the \href{https://houseofcommonslibrary.github.io/msoanames/}{House of Commons Library MSOA Names}
 }
 \keyword{datasets}

@@ -11,11 +11,13 @@
 #' @references For further details, see the 
 #'             [HDX dedicated webpage](https://data.humdata.org/dataset/united-kingdom-high-resolution-population-density-maps-demographic-estimates) 
 #' 
+#' @importFrom utils download.file unzip
+#' 
 #' @export
 #'
 down_zip <- \(x){
     tmpf <- tempfile()
-    for(idx in 1:length(sfx_urls)){
+    for(idx in 1:length(hdx_urls$sfx)){
         fn <- hdx_urls$sfx[idx]
         message('\nProcessing ', toupper(names(fn)))
         message(' - download...')
