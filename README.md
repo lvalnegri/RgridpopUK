@@ -1,6 +1,6 @@
 ## RgridpopUK
 
-An $R$ package with a few functionalities on how to download, prepare, and visualize data about Population in England and Wales at micro grid levels of 30 meters, as published by the [Humanitarian Data Exchange](https://data.humdata.org/) on behalf of [Data for Good at Meta (previously Facebook)](https://data.humdata.org/organization/74ad0574-923d-430b-8d52-ad80256c4461), either as a Total, or segmented by the following characteristics:
+An $R$ package with a few functionalities on how to download, prepare, and visualize data about Population in England and Wales at micro grid levels of 30 meters, as published by the [Humanitarian Data Exchange](https://data.humdata.org/) on behalf of [Data for Good at Meta (previously Facebook)](https://data.humdata.org/organization/74ad0574-923d-430b-8d52-ad80256c4461), either as a Total, or segmented by Sex and Age as follows:
 - Women 
 - Men 
 - Children (ages 0-5)

@@ -36,6 +36,6 @@ NULL
 
 #' mps
 #'
-#' Initial leaflet map of England and Wales
+#' Initial leaflet map centered on England and Wales
 #'
 'mps'

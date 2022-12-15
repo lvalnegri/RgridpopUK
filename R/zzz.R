@@ -57,10 +57,10 @@ credits <- '
     <ul>
         <li>
             Facebook Connectivity Lab and Center for International Earth Science Information Network - CIESIN - Columbia University. 2016. \n
-            High Resolution Settlement Layer (HRSL). Source imagery for HRSL © 2016 DigitalGlobe. \n
+            High Resolution Settlement Layer (HRSL). Source imagery for HRSL \u00A9 2016 DigitalGlobe. \n
             <a href="https://data.humdata.org/dataset/united-kingdom-high-resolution-population-density-maps-demographic-estimates">Data accessed 15 Dec 2022</a>.
         </li>
-        <li> Contains OS data © Crown copyright and database rights 2023. </li>
+        <li> Contains OS data \u00A9 Crown copyright and database rights 2023. </li>
         <li>
             Source: Office for National Statistics licensed under the 
             [Open Government Licence v.3.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
