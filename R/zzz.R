@@ -48,7 +48,7 @@ spop.lst <- c(
 #' @export
 #' 
 centroids <- data.table(
-    code = c('', 'o', 'w', 'p'),
+    code = c('g', 'o', 'w', 'p'),
     description = c('Geometric', 'ONS Weighted', 'Weighted', 'Visual'),
     icon = c('hexagon', 'scale-balanced', 'atom', 'atom'), 
     colour = c('#FFFFFF', '#FFFFFF', '#FFFFFF', '#000000'),         # icon colour
