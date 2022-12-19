@@ -1,8 +1,38 @@
-#' List of [ColorBrewer](https://colorbrewer2.org/) palettes grouped by type of visualization scale
+#' marker_colours
+#' 
+#' List of the available colours to fill *Awesome Markers* in `leaflet` maps
 #'
-#' @noRd
+#' @references \url{https://rstudio.github.io/leaflet/markers.html}
+#' 
+#' @return a character vector
+#'
+#' @author Luca Valnegri, \email{l.valnegri@datamaps.co.uk}
+#'
+#' @export
+#' 
+marker_colours <- c(
+  'red', 'darkred', 'orange', 'pink', 'beige', 
+  'green', 'lightgreen', 'darkgreen', 
+  'blue', 'lightblue', 'cadetblue', 'purple', 
+  'white', 'gray', 'lightgray', 'black'
+)
+
+#' palettes.lst
+#' 
+#' List of *ColorBrewer* palettes grouped by type of visualization scale:
+#' - **sequential**:  ordinal data where *low* is less/more important and *high* is more/less important
+#' - **diverging**:   ordinal data where both low and high are equally but opposite important (deviation from some reference *average* point)
+#' - **qualitative**: categorical/nominal data where there is no apparent or logical order
+#'
+#' @references \url{https://colorbrewer2.org/}
+#' 
+#' @return a list
+#'
+#' @author Luca Valnegri, \email{l.valnegri@datamaps.co.uk}
+#'
+#' @export
 palettes.lst <- list(
-    'SEQUENTIAL' = c( # ordinal data where (usually) low is less important and high is more important
+    'SEQUENTIAL' = c( # 
         'Blues' = 'Blues', 'Blue-Green' = 'BuGn', 'Blue-Purple' = 'BuPu', 'Green-Blue' = 'GnBu', 'Greens' = 'Greens', 'Greys' = 'Greys',
         'Oranges' = 'Oranges', 'Orange-Red' = 'OrRd', 'Purple-Blue' = 'PuBu', 'Purple-Blue-Green' = 'PuBuGn', 'Purple-Red' = 'PuRd', 'Purples' = 'Purples',
         'Red-Purple' = 'RdPu', 'Reds' = 'Reds', 'Yellow-Green' = 'YlGn', 'Yellow-Green-Blue' = 'YlGnBu', 'Yellow-Orange-Brown' = 'YlOrBr',
@@ -27,6 +57,8 @@ palettes.lst <- list(
 #' @author Luca Valnegri, \email{l.valnegri@datamaps.co.uk}
 #'
 #' @importFrom scales brewer_pal
+#' 
+#' @export
 #'
 palettes.lst.pkr <- {
     yx <- lapply(
@@ -39,77 +71,4 @@ palettes.lst.pkr <- {
     )
     names(yx) <- names(palettes.lst)
     yx
-}
-
-
-#' dd_palette
-#' 
-#' A tailored `palettePicker` control from the `esquisse` package
-#'
-#' @param id  id for the  control
-#' @param lbl label for the control
-#' @param sel colour scheme at start
-#'
-#' @return a palettePicker control  
-#'
-#' @author Luca Valnegri, \email{l.valnegri@datamaps.co.uk}
-#'
-#' @importFrom esquisse palettePicker
-#'
-#' @export
-#'
-dd_palette <- function(id, lbl = 'PALETTE:', sel = 'Red-Yellow-Blue'){
-    palettePicker(
-        inputId = id, 
-        label = lbl,
-    	choices = palettes.lst.pkr,
-        selected = sel,
-        textColor = c( 
-            rep('black', length(palettes.lst.pkr[[1]])), 
-            rep('white', length(palettes.lst.pkr[[2]])), 
-            rep('black', length(palettes.lst.pkr[[3]]))
-        ) 
-    )
-}
-
-
-#' dd_colour
-#' 
-#' A tailored `colorPickr` control from the `shinyWidgets` package
-#'
-#' @param id  id for the  control
-#' @param lbl label for the control
-#' @param slz colour scheme at start
-#' @param full if TRUE returns the full object, otherwise the minimal compact
-#'
-#' @return a colorPickr control  
-#'
-#' @author Luca Valnegri, \email{l.valnegri@datamaps.co.uk}
-#'
-#' @importFrom shinyWidgets colorPickr
-#'
-#' @export
-#'
-dd_colour <- function(id, lbl, slz, full = TRUE){
-    if(full){
-        colorPickr(
-            inputId = id,
-            label = lbl,
-            selected = slz,
-            theme = 'monolith',
-            width = '100%'
-        )
-    } else {
-        colorPickr(
-            inputId = id,
-            label = lbl,
-            selected = slz,
-            swatches = marker_colours,
-            update = 'change',
-            preview = FALSE,
-            hue = FALSE,
-            interaction = list( hex = FALSE, rgba = FALSE, input = FALSE, save = FALSE, clear = FALSE ),
-            pickr_width = '230px'
-        )
-    }
 }

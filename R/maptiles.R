@@ -15,9 +15,9 @@
 tiles.lst <- list(
     'Google Maps Standard' = 'https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}&hl=it',
     'Google Maps Satellite' = 'https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}&hl=it',
-    'Google Maps Terreno' = 'https://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}&hl=it',
-    'Google Maps Alternativo' = 'https://{s}.google.com/vt/lyrs=r&x={x}&y={y}&z={z}&hl=it',
-    'Google Maps Solo Strade' = 'https://{s}.google.com/vt/lyrs=h&x={x}&y={y}&z={z}&hl=it',
+    'Google Maps Terrain' = 'https://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}&hl=it',
+    'Google Maps Alternative' = 'https://{s}.google.com/vt/lyrs=r&x={x}&y={y}&z={z}&hl=it',
+    'Google Maps Routes Only' = 'https://{s}.google.com/vt/lyrs=h&x={x}&y={y}&z={z}&hl=it',
     'OSM Mapnik' = 'OpenStreetMap.Mapnik',
     'OSM HOT' = 'OpenStreetMap.HOT',
     'OSM Topo' = 'OpenTopoMap',
@@ -33,8 +33,6 @@ tiles.lst <- list(
     'CartoDB Voyager' = 'CartoDB.Voyager',
     'CartoDB Positron' = 'CartoDB.Positron',
     'CartoDB Dark Matter' = 'CartoDB.DarkMatter',
-    'OPNVKarte' = 'https://tileserver.memomaps.de/tilegen/{z}/{x}/{y}.png',
-    'Hike Bike' = 'HikeBike.HikeBike',
     'Mtb' = 'MtbMap'
 )
 

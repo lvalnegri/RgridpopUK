@@ -15,14 +15,13 @@ BugReports: https://github.com/lvalnegri/RgridpopUK/issues
 Depends: R (>= 4.1)
 Imports:
   data.table,
-  esquisse,
   fst,
   htmltools,
   htmlwidgets,
   leaflet,
   scales,
   sf,
-  shinyWidgets
+  stats
 Suggests:
   knitr,
   rmarkdown,

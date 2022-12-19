@@ -10,6 +10,9 @@ An object of class \code{character} of length 7.
 \usage{
 spop.lst
 }
+\value{
+a character vector
+}
 \description{
 List of the various population segments available in the datasets
 }

@@ -20,31 +20,39 @@ hdx_urls <- list(
 #' 
 #' List of the various population segments available in the datasets
 #'
+#' @return a character vector
+#'
 #' @export
 #' 
 spop.lst <- c(
-    'Total' = 'total', 
+    'Population' = 'total', 
     'Men' = 'men', 
     'Female' = 'women', 
+    'Children (0-4yo)' = 'children_under_five',
     'Youth (15-24yo)' = 'youth_15_24',
     'Elderly (60yo plus)' = 'elderly_60_plus', 
-    'Women of Reproductive Age (15-49yo)' = 'women_of_reproductive_age_15_49', 
-    'Children (0-4yo)' = 'children_under_five'
+    'Women of Reproductive Age (15-49yo)' = 'women_of_reproductive_age_15_49'
 )
 
 
 #' centroids
 #' 
-#' List of centroids
+#' List of properties associated with the various centroids included in the `MSOA` data.table and used in the shiny app:
+#' - `g` geometric
+#' - `w` weighted according to ONS
+#' - `d` weighted dynamically based on grid
+#' - `p` *pole of inaccessibility* or *visual centre*
+#'
+#' @return a data.table
 #'
 #' @export
 #' 
 centroids <- data.table(
-    acro = c('', 'w', 'p'),
-    description = c('Geometric', 'Weighted', 'Visual'),
-    icon = c('hexagon', 'scale-balanced', 'atom'), 
-    colour = c('#FFFFFF', '#FFFFFF', '#000000'),         # icon colour
-    fColour = c('cadetblue', 'darkpurple', 'red')        # marker colour
+    code = c('', 'o', 'w', 'p'),
+    description = c('Geometric', 'ONS Weighted', 'Weighted', 'Visual'),
+    icon = c('hexagon', 'scale-balanced', 'atom', 'atom'), 
+    colour = c('#FFFFFF', '#FFFFFF', '#FFFFFF', '#000000'),         # icon colour
+    fColour = c('cadetblue', 'darkpurple', 'darksalmon', 'red')     # marker colour
 )
 
 #' credits

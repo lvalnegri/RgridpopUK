@@ -5,7 +5,7 @@
 \alias{tiles.lst}
 \title{tiles.lst}
 \format{
-An object of class \code{list} of length 23.
+An object of class \code{list} of length 21.
 }
 \usage{
 tiles.lst

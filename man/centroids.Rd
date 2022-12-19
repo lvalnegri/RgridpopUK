@@ -5,12 +5,21 @@
 \alias{centroids}
 \title{centroids}
 \format{
-An object of class \code{data.table} (inherits from \code{data.frame}) with 3 rows and 5 columns.
+An object of class \code{data.table} (inherits from \code{data.frame}) with 4 rows and 5 columns.
 }
 \usage{
 centroids
 }
+\value{
+a data.table
+}
 \description{
-List of centroids
+List of properties associated with the various centroids included in the \code{MSOA} data.table and used in the shiny app:
+\itemize{
+\item \code{g} geometric
+\item \code{w} weighted according to ONS
+\item \code{d} weighted dynamically based on grid
+\item \code{p} \emph{pole of inaccessibility} or \emph{visual centre}
+}
 }
 \keyword{datasets}

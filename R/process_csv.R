@@ -19,7 +19,7 @@ process_csv <- \(in_path, out_path = in_path){
         message('\n===============================================')
         message('\nSTARTING: ', toupper(tns[idx]))
         y <- fread(fns[idx], col.names = c('y_lat', 'x_lon', 'pop'))
-        y <- y[!(x_lon < bbox[1] | x_lon > bbox.uk[2] | y_lat < bbox.uk[3] | y_lat > bbox.uk[4]) & pop > 0][, id := 1:.N] |> setcolorder('x_lon')
+        y <- y[x_lon %between% c(bbox[1], bbox[2]) & y_lat %between% c(bbox[3], bbox[4]) & pop > 0][, id := 1:.N] |> setcolorder('x_lon')
         yt <- rbindlist(lapply(
             MSOAgb$MSOA,
             \(x){
