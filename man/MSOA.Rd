@@ -14,7 +14,7 @@ MSOA
 Geographic Digital Boundaries in \code{sf} format of Medium Super Output Areas (MSOA) in England and Wales as of last Census 2021 (last update: Dec 2021).
 }
 \details{
-The CRS is WGS84, EPSG:4326, the lines have been simplified at 20\%
+The CRS is WGS84, EPSG:4326
 
 For more details, consult the \href{https://geoportal.statistics.gov.uk/}{ONS Geoportal}
 }

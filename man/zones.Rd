@@ -15,27 +15,27 @@ A data.table with the following columns:
 \item{\code{MSOAd}}{ The name for the \code{MSOA} complete with its \code{LAD} name }
 \item{\code{area}}{ The geographic area  }
 \item{\code{perimeter}}{ The perimeter or boundary length }
-\item{\code{x_lon}}{ The longitude of the Geometric Centroid }
-\item{\code{y_lat}}{ The latitude of the Geometric Centroid }
+\item{\code{gx_lon}}{ The longitude of the Geometric Centroid }
+\item{\code{gy_lat}}{ The latitude of the Geometric Centroid }
 \item{\code{ox_lon}}{ The longitude of the ONS Weighted Centroid }
 \item{\code{oy_lat}}{ The latitude of the ONS Weighted Centroid }
 \item{\code{wx_lon}}{ The longitude of the (internal) simple mean Weighted Centroid }
 \item{\code{wy_lat}}{ The latitude of the (internal) simple mean Weighted Centroid }
 \item{\code{px_lon}}{ The longitude of the \emph{Pole of Inaccessibility} }
 \item{\code{py_lat}}{ The latitude of the \emph{Pole of Inaccessibility} }
-\item{\code{ population }}{ Population as of Census England and Wales 2021 }
-\item{\code{ males }}{ Males as of Census England and Wales 2021 }
-\item{\code{ females }}{ Females as of Census England and Wales 2021 }
-\item{\code{ children }}{ Children (age 0-4) as of Census England and Wales 2021 }
-\item{\code{ youth }}{ Youth (age 15-24) as of Census England and Wales 2021 }
-\item{\code{ elderly }}{ Elderly (age 60+) as of Census England and Wales 2021 }
+\item{\code{population}}{ Population as of Census England and Wales 2021 }
+\item{\code{males}}{ Males as of Census England and Wales 2021 }
+\item{\code{females}}{ Females as of Census England and Wales 2021 }
+\item{\code{children}}{ Children (age 0-4) as of Census England and Wales 2021 }
+\item{\code{youth}}{ Youth (age 15-24) as of Census England and Wales 2021 }
+\item{\code{elderly}}{ Elderly (age 60+) as of Census England and Wales 2021 }
 }
 
 For further details, see:
 \itemize{
 \item the \href{https://houseofcommonslibrary.github.io/msoanames/}{House of Commons Library MSOA Names}
-\item the \href{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=name&tags=all(CTD_MSOA)}{Weighted centroids for MSOA section}
-of the \href{https://geoportal.statistics.gov.uk}{ONS Geoportal} (the new Census 2021 aren't published yet)
+\item the \href{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=name&tags=all(CTD_MSOA)}{ONS Weighted centroids for MSOA}
+\item the \href{https://www.nomisweb.co.uk/sources/census_2021_ts}{Census 2021 for England and Wales}
 \item the \href{https://github.com/jolars/polylabelr}{\emph{polylabelr}} $R$ package, wrapper for
 the \href{https://github.com/mapbox/polylabel}{mapbox \emph{polylabel}} JS library, a fast algorithm for
 finding the \emph{pole of inaccessibility}, aka the most distant internal point from a polygon outline, also called \emph{visual centre}.

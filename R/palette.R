@@ -17,6 +17,7 @@ marker_colours <- c(
   'white', 'gray', 'lightgray', 'black'
 )
 
+
 #' palettes.lst
 #' 
 #' List of *ColorBrewer* palettes grouped by type of visualization scale:
@@ -32,21 +33,22 @@ marker_colours <- c(
 #'
 #' @export
 palettes.lst <- list(
-    'SEQUENTIAL' = c( # 
-        'Blues' = 'Blues', 'Blue-Green' = 'BuGn', 'Blue-Purple' = 'BuPu', 'Green-Blue' = 'GnBu', 'Greens' = 'Greens', 'Greys' = 'Greys',
-        'Oranges' = 'Oranges', 'Orange-Red' = 'OrRd', 'Purple-Blue' = 'PuBu', 'Purple-Blue-Green' = 'PuBuGn', 'Purple-Red' = 'PuRd', 'Purples' = 'Purples',
-        'Red-Purple' = 'RdPu', 'Reds' = 'Reds', 'Yellow-Green' = 'YlGn', 'Yellow-Green-Blue' = 'YlGnBu', 'Yellow-Orange-Brown' = 'YlOrBr',
-        'Yellow-Orange-Red' = 'YlOrRd'
-    ),
-    'DIVERGING' = c(  # ordinal data where both low and high are important (i.e. deviation from some reference "average" point)
-        'Brown-Blue-Green' = 'BrBG', 'Pink-Blue-Green' = 'PiYG', 'Purple-Red-Green' = 'PRGn', 'Orange-Purple' = 'PuOr', 'Red-Blue' = 'RdBu', 'Red-Grey' = 'RdGy',
-        'Red-Yellow-Blue' = 'RdYlBu', 'Red-Yellow-Green' = 'RdYlGn', 'Spectral' = 'Spectral'
-    ),
-    'QUALITATIVE' = c(  # categorical/nominal data where there is no logical order
-        'Accent' = 'Accent', 'Dark2' = 'Dark2', 'Paired' = 'Paired', 'Pastel1' = 'Pastel1', 'Pastel2' = 'Pastel2',
-        'Set1' = 'Set1', 'Set2' = 'Set2', 'Set3' = 'Set3'
-    )
+  'SEQUENTIAL' = c( # 
+    'Blues' = 'Blues', 'Blue-Green' = 'BuGn', 'Blue-Purple' = 'BuPu', 'Green-Blue' = 'GnBu', 'Greens' = 'Greens', 'Greys' = 'Greys',
+    'Oranges' = 'Oranges', 'Orange-Red' = 'OrRd', 'Purple-Blue' = 'PuBu', 'Purple-Blue-Green' = 'PuBuGn', 'Purple-Red' = 'PuRd', 'Purples' = 'Purples',
+    'Red-Purple' = 'RdPu', 'Reds' = 'Reds', 'Yellow-Green' = 'YlGn', 'Yellow-Green-Blue' = 'YlGnBu', 'Yellow-Orange-Brown' = 'YlOrBr',
+    'Yellow-Orange-Red' = 'YlOrRd'
+  ),
+  'DIVERGING' = c(  # ordinal data where both low and high are important (i.e. deviation from some reference "average" point)
+    'Brown-Blue-Green' = 'BrBG', 'Pink-Blue-Green' = 'PiYG', 'Purple-Red-Green' = 'PRGn', 'Orange-Purple' = 'PuOr', 'Red-Blue' = 'RdBu', 'Red-Grey' = 'RdGy',
+    'Red-Yellow-Blue' = 'RdYlBu', 'Red-Yellow-Green' = 'RdYlGn', 'Spectral' = 'Spectral'
+  ),
+  'QUALITATIVE' = c(  # categorical/nominal data where there is no logical order
+    'Accent' = 'Accent', 'Dark2' = 'Dark2', 'Paired' = 'Paired', 'Pastel1' = 'Pastel1', 'Pastel2' = 'Pastel2',
+    'Set1' = 'Set1', 'Set2' = 'Set2', 'Set3' = 'Set3'
+  )
 )
+
 
 #' palettes.lst.pkr
 #' 

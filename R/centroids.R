@@ -29,9 +29,9 @@ wcentroids <- function(y, crs, coords = c('x_lon', 'y_lat'), from_wgs = FALSE, c
     y <- data.table( y |> st_drop_geometry(), y |> st_coordinates() |> as.data.table() |> setnames(coords) )
     ncoords <- paste0(prfx, coords)
     if(is.null(id)){
-        y <- y[, .( weighted.mean(get(coords[1]), get(cn) ** fexp), weighted.mean(get(coords[1]), get(cn) ** fexp) )] |> 
+        y <- y[, .( weighted.mean(get(coords[1]), get(cn) ** fexp), weighted.mean(get(coords[2]), get(cn) ** fexp) )] |> 
                 setnames(ncoords)
-        data.table( y |> st_as_sf(coords = ncoords, crs = crs) |> st_transform(4326) |> st_coordinates() )
+        data.table( y |> st_as_sf(coords = ncoords, crs = crs) |> st_transform(4326) |> st_coordinates() ) |> setnames(ncoords)
     } else {
         y <- y[, .( weighted.mean(get(coords[1]), get(cn) ** fexp), weighted.mean(get(coords[2]), get(cn) ** fexp) ), get(id)] |> 
                 setnames(c(id, ncoords))

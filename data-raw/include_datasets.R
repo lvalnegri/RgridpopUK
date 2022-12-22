@@ -6,9 +6,9 @@ library(data.table)
 library(leaflet)
 devtools::load_all()
 
-# MSOA boundaries WGS84 simplified at 20%
+# MSOA boundaries WGS84
 fn <- 'MSOA'
-y <- qs::qread(file.path(Rfuns::bnduk_path, 's20', 'MSOA21')) |> setnames('MSOA21', 'MSOA')
+y <- qs::qread(file.path(Rfuns::bnduk_path, 's00', 'MSOA21gb')) |> setnames('MSOA21', 'MSOA') |> st_transform(4326)
 bbx <- as.numeric(sf::st_bbox(y))
 assign(fn, y)
 save( list = fn, file = file.path('data', paste0(fn, '.rda')), version = 3, compress = 'gzip' )
@@ -16,7 +16,7 @@ sf::st_write(y, './data-raw/shp/MSOA.shp', append=FALSE)
 
 # initial map
 fn <- 'mps'
-y <- leaflet() |>
+ym <- leaflet() |>
         add_maptile(tiles.lst[[2]]) |> 
         fitBounds(bbx[1], bbx[2], bbx[3], bbx[4]) |>
         regPlugin(spinPlugin) |>
@@ -26,18 +26,12 @@ y <- leaflet() |>
                       $(".leaflet-control-layers-overlays").prepend("<span id=map_menu_title>CENTROIDS</span>");
               ') |>
         clearShapes() |>
-        end_spinmap(c(-1.777699, 52.55826))
-assign(fn, y)
+        end_spinmap(centers.uk$EW)
+assign(fn, ym)
 save( list = fn, file = file.path('data', paste0(fn, '.rda')), version = 3, compress = 'gzip' )
-
-# MSOA boundaries BNG original
-fn <- 'MSOAgb'
-y <- qs::qread(file.path(Rfuns::bnduk_path, 's00', 'MSOA21gb')) |> setnames('MSOA21', 'MSOA')
-assign(fn, y)
-save( list = fn, file = file.path('data', paste0(fn, '.rda')), version = 3, compress = 'gzip' )
-sf::st_write(y, './data-raw/shp/MSOAgb.shp', append=FALSE)
 
 # MSOA data.table
+y <- y |> st_transform(27700)
 fn <- 'zones'
 y1 <- data.table( 
           y |> st_drop_geometry(), 

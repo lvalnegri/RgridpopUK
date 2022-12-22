@@ -1,8 +1,8 @@
 Package: RgridpopUK
 Type: Package
-Date: 2022-12-15
+Date: 2022-12-22
 Title: Population of England and Wales at micro grid level
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: person("Luca", "Valnegri", email = "l.valnegri@datamaps.co.uk", role = c("aut", "cre"))
 Description: 
   Functionalities for downloading, processing, and visualizing the population of England and Wales at 30 meters micro grid level, 

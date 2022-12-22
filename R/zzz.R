@@ -26,12 +26,12 @@ hdx_urls <- list(
 #' 
 spop.lst <- c(
     'Population' = 'total', 
-    'Men' = 'men', 
-    'Female' = 'women', 
-    'Children (0-4yo)' = 'children_under_five',
-    'Youth (15-24yo)' = 'youth_15_24',
-    'Elderly (60yo plus)' = 'elderly_60_plus', 
-    'Women of Reproductive Age (15-49yo)' = 'women_of_reproductive_age_15_49'
+    'Males' = 'males', 
+    'Females' = 'females', 
+    'Children (0-4yo)' = 'children',
+    'Youth (15-24yo)' = 'youth',
+    'Elderly (60yo plus)' = 'elderly', 
+    'Women of Reproductive Age (15-49yo)' = 'women'
 )
 
 
@@ -50,9 +50,20 @@ spop.lst <- c(
 centroids <- data.table(
     code = c('g', 'o', 'w', 'p'),
     description = c('Geometric', 'ONS Weighted', 'Weighted', 'Visual'),
-    icon = c('hexagon', 'scale-balanced', 'atom', 'atom'), 
-    colour = c('#FFFFFF', '#FFFFFF', '#FFFFFF', '#000000'),         # icon colour
-    fColour = c('cadetblue', 'darkpurple', 'darksalmon', 'red')     # marker colour
+    icon = c('hexagon', 'scale-balanced', 'scale-unbalanced', 'atom'), 
+    colour = c('#FFFFFF', '#FFFFFF', '#FFFFFF', '#000000'),     # icon colour: any RGB
+    fColour = c('cadetblue', 'darkpurple', 'green', 'red')      # marker colour: limited named choice
+)
+
+#' UK Centroids
+#'
+#' @export
+#' 
+centers.uk <- list(
+    'UK' = c(-2.902945, 54.17413),
+    'GB' = c(-2.668885, 54.14725),
+    'EW' = c(-1.777830, 52.55795),
+    'E'  = c(-1.463432, 52.59309)
 )
 
 #' credits

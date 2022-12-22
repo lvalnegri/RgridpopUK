@@ -12,7 +12,7 @@ msoa.lst
 }
 \description{
 List of Medium Super Output Areas (MSOA) names and ONS codes in England and Wales for use in a Shiny \emph{select} control.
-The name of each Zone is completed with the name in brackets of the correspondent \code{LTLA}
+The name of each \code{MSOA} is completed with the name in brackets of the correspondent \code{LAD}.
 }
 \details{
 For more details, consult the \href{https://geoportal.statistics.gov.uk/search?sort=-modified&tags=msoa}{ONS Geoportal} and

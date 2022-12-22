@@ -11,6 +11,6 @@ An object of class \code{leaflet} (inherits from \code{htmlwidget}) of length 8.
 mps
 }
 \description{
-Initial leaflet map centered on England and Wales
+Initial leaflet map centred on England and Wales
 }
 \keyword{datasets}

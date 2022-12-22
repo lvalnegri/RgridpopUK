@@ -28,7 +28,7 @@ regPlugin <- function(mp, plugin) {
 #' @export
 #' 
 faPlugin <- htmlDependency(
-    name = 'font-awesome',
+    name = 'fontawesome',
     version = '99.0',
     src = c(href = 'https://analytics-hub.ml/assets/icons/fontawesome'),
     stylesheet = 'css/all.css'
@@ -117,4 +117,4 @@ on_render_spin <- function(mp, x = ''){
 #'
 #' @export
 #' 
-end_spinmap <- function(mp, y) mp |> addCircles( lng = y[1], lat = y[2], radius = 0, opacity = 0, layerId = 'spinnerMarker')
+end_spinmap <- function(mp, y = centers.uk$EW) mp |> addCircles( lng = y[1], lat = y[2], radius = 0, opacity = 0, layerId = 'spinnerMarker')

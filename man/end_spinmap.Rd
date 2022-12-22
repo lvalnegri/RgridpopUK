@@ -4,7 +4,7 @@
 \alias{end_spinmap}
 \title{end_spinmap}
 \usage{
-end_spinmap(mp, y)
+end_spinmap(mp, y = centers.uk$EW)
 }
 \arguments{
 \item{mp}{a leaflet object}
