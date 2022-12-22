@@ -8,18 +8,22 @@ An $R$ package with a few functionalities on how to download, prepare, and visua
  - Elderly (ages 60+)
  - Women of reproductive age (ages 15-49)
 
-The package also contains 
+The package also contains:
  - a table `zones` with all 7,264 *Middle-Layer Super Output Areas*, or `MSOA`, in England and Wales as of Census 2021, with some of their main geographic and demographic characteristics.
  - a processed version, converted in `sf` format suitable for $R$ analysis and *RMarkdown* or *Shiny* application, of the Census 2021 digital boundaries MSOA` 
  
-See: 
+For more information, see: 
  - the [ONS website](https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeographies/census2021geographies) for more information about the Census hierarchy geographic structure 
  - the [ONS geoportal](https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=name&tags=all(BDY_MSOA%2CDEC_2021)) for the original geographic files
  - the [House of Commons Library](https://houseofcommonslibrary.github.io/msoanames/) for more *presentable* names for `MSOA`.
 
+The package is not on `CRAN`. To install the package:
+```
+remotes::install_github('lvalnegri/Rgridpopuk')
+```
 The total needed storage is about 2.2GB.
 
-A Shiny app is also included, ready to run as soon as the data have been correctly processed. 
+A *Shiny* app is also included, ready to run as soon as the data have been correctly processed. 
 
 
 ### Attributions
